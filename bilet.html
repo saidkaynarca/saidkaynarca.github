@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bilet.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+    <title>Sinema Bilet Rezervasyon</title>
+</head>
+<html lang="tr">
+    
+<body>
+    
+    
+  
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br>
+    <br> <br> <br>  <br> <br> <br><br> <br>  <br><br> <br>
+    
+
+    
+    <h1>SİNEMA DÜNYASINA HOŞGELDİN</h1>
+
+    <p> Vizyonda olan altı filimden birini seçiniz ardından panele müşteri adı, soyadı ve telefon numarası giriniz
+         ki böylelikle salonumuza kaydınız yapılsın.<br>
+         Filmi izlemek istediğiniz koltuğu işaretleyiniz. Yanınıza patlamış mısır almayı unutmayınız. Keyifli seyirler dileriz.</p>
+
+    <div class="container-resim">
+        <div class="box"><img src="img/aşksanabenzer.jpg" width="180px" height="200px" /></div>
+        <div class="box"><img src="img/deathrace.jpg" width="180px" height="200px" /></div>
+        <div class="box"><img src="img/doktorstrange.jpg" width="180px" height="200px" /></div>
+        <div class="box"><img src="img/erşan.jpg" width="180px" height="200px" /></div>
+        <div class="box"><img src="img/korkuseansı.jpg" width="180px" height="200px" /></div>
+        <div class="box"><img src="img/mucize.jpg" width="180px" height="200px" /></div>
+    </div>
+
+  <div id="sayfa">
+    <center><label>Ad:</label>    <input type="text"  id="ad"></center>
+    <center><label>Soyad:</label> <input type="text"  id="soyad"> </center>
+    <center> <label>Telefon Numarası</label>   <input type="number"  id="yas"></center>
+        <center> <button id="ekle">Tabloya Ekle</button></center>
+  <table id="liste">
+      <tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Telefon Numarası</th>
+      </tr>
+  </table>
+  </div>
+<body>
+    <h1>Bilet Alış Noktası</h1>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+    <div class="movie-list">
+        <select id="movie">
+            <option disabled>Film Seçiniz</option>
+            <option value="20">DOKTOR STRANGE 2</option>
+            <option value="21">ERŞAN KUNERİ</option>
+            <option value="22">7. KOĞUŞTAKİ MUCİZE</option>
+            <option value="23">KORKU SEANSI 3</option>
+            <option value="24">ÖLÜM YARIŞI 1</option>
+            <option value="25">AŞK SANA BENZER</option>
+        </select>
+    </div>
+
+    <ul class="info">
+        <li>
+            <div class="seat selected"></div>
+            <small>Seçili</small>
+        </li>
+        <li>
+            <div class="seat"></div>
+            <small>Boş</small>
+        </li>
+        <li>
+            <div class="seat reserved"></div>
+            <small>Dolu</small>
+        </li>
+    </ul>
+
+    <p class="text">
+        <span id="count">3</span> <font size="5">  adet koltuk için hesaplanan ücret </font><span id="amount">60</span> TL.
+    </p>
+
+
+
+    <script src="bilet.js"></script>
+</body>
+</html>
