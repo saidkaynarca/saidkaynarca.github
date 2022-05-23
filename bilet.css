@@ -12,6 +12,17 @@ body {
     color: #fff;
 }
 
+.bayraklar{
+    margin-left: 1450px;
+
+}
+
+.flags{
+  margin-left: 1300px;
+  margin-top: -55px;
+ 
+}
+
 .seat {
     background-color: #444451;
     height: 15px;
