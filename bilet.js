@@ -32,7 +32,7 @@ function calculateTotal() {
         seatsArr.push(seat);
     });
 
-    // [1,3,5]
+   
     let selectedSeatIndexs = selectedSeatsArr.map(function(seat) {
         return seatsArr.indexOf(seat);
     });
@@ -87,23 +87,23 @@ ekle.onclick=function(){
   tSoyad.textContent=soyad.value;//textboxtan değeri okuyup aktardım.
   tYas.textContent=yas.value;//textboxtan değeri okuyup aktardım.
 
- //TR Yİ OLUŞTURDUM
+
   let tr=document.createElement("tr");
 
-  //tdleri tr içine ekledim
+
   tr.appendChild(tAd);
   tr.appendChild(tSoyad);
   tr.appendChild(tYas);
 
-  //tr elementini liste (tablo) içine ekledim
+ 
   liste.appendChild(tr);
 
-  //nesnelerin için eklemeden sonra temizleyelim
+
   ad.value="";
   soyad.value="";
   yas.value="";
 
-  //temizlemeden sonra ad içine odaklama
+
   ad.focus();
 }
 
